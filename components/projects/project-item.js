@@ -56,7 +56,9 @@ export default function ProjectItem({ data }) {
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">{title}</h1>
         <h3 className="mt-4 text-xl">{description}</h3>
-        <Link href={github}>깃허브 바로가기</Link>
+        <Link href={github} className="text-cyan-500 font-bold">
+          깃허브 바로가기
+        </Link>
         <p className="my-1">
           작업기간 : {start}~{end} ({calculatedPeriod(start, end)}일)
         </p>
